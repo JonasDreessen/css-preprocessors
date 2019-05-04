@@ -1,0 +1,219 @@
+@media only screen and (min-width: 300px) and (max-width: 936px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+      grid-template-areas: "Image" "Name" "Personalia" "Introduction-" "Profiles" "Experience" "Education" "Skills";
+    }
+  
+    .Image > img {
+      height: 100%;
+      border-radius: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 936px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 33% 66%;
+      grid-template-rows: 25% 25% 25% 25%;
+      grid-template-areas: "Image Name" "Personalia Introduction-" "Profiles Experience" "Education Skills";
+    }
+  
+    .Image > img {
+      height: 60%;
+      border-radius: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  $heading-font: "Roboto", sans-serif;
+  $paragraph-font: "Open Sans", sans-serif;
+  $size-heading: 16px;
+  
+  .container {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+  }
+  
+  .Image {
+    grid-area: Image;
+  }
+  
+  .Name {
+    grid-area: Name;
+    margin: auto;
+    text-align: center;
+  }
+  
+  #Jonas {
+    font-family: "Montserrat", sans-serif;
+    font-size: 100px;
+  }
+  #Job {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  
+  .Personalia {
+    grid-area: Personalia;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Title infopersonalia";
+    display: grid;
+    padding: 30px;
+  }
+  
+  .infopersonalia {
+    display: grid;
+    font-family: $paragraph-font;
+    font-size: 14px;
+  }
+  
+  .infopersonalia {
+    a:hover,
+    a:link {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  
+  .Title {
+    display: grid;
+    font-weight: bold;
+    font-family: $heading-font;
+    font-size: $size-heading;
+  }
+  
+  .Introduction- {
+    grid-area: Introduction-;
+    text-align: left;
+  }
+  
+  .Introduction- {
+    p {
+      word-spacing: 2.5px;
+      line-height: 200%;
+      padding-top: 20px;
+      font-family: $paragraph-font;
+    }
+  }
+  
+  .Introduction- {
+    h1 {
+      font-family: $heading-font;
+      letter-spacing: 2.5px;
+    }
+  }
+  
+  .Profiles {
+    grid-area: Profiles;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo links";
+    padding: 30px;
+  }
+  
+  .logo {
+    display: grid;
+  }
+  
+  .links {
+    display: grid;
+    padding-top: inherit;
+    font-family: $paragraph-font;
+    font-size: 14px;
+  }
+  .Profiles {
+    a:link,
+    a:hover,
+    a:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  
+  .Experience {
+    grid-area: Experience;
+    text-align: left;
+  }
+  
+  .Experience > h1 {
+    font-family: $heading-font;
+    letter-spacing: 2.5px;
+  }
+  
+  .Experience {
+    p {
+      word-spacing: 2.5px;
+      line-height: 200%;
+      padding-top: 20px;
+      font-family: $paragraph-font;
+      padding-top: 20px;
+    }
+  }
+  .Education {
+    grid-area: Education;
+    padding: 30px;
+  }
+  
+  .Education {
+    h1 {
+      font-family: $heading-font;
+      letter-spacing: 2.5px;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  .Education {
+    h3 {
+      font-family: $heading-font;
+      font-size: $size-heading;
+      padding-top: 10px;
+    }
+  }
+  
+  .Education {
+    span {
+      font-family: $paragraph-font;
+      font-size: 14px;
+    }
+  }
+  
+  .Skills {
+    grid-area: Skills;
+  }
+  
+  .Skills {
+    h1 {
+      font-family: $heading-font;
+      letter-spacing: 2.5px;
+      padding-top: 20px;
+    }
+  }
+  
+  .skilldiv {
+    div {
+      h6 {
+        font-family: $paragraph-font;
+        font-size: $size-heading;
+        color: gray;
+        font-style: italic;
+      }
+    }
+  }
+  .skillcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-top: 8%;
+  }
+  
+
+    
